@@ -7,6 +7,14 @@
     --special-bg-color:#2F303A;
 }
 /* body */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
 body {
     color: var(--primary-text-color);
     background-color: var(--main-bg-color);
@@ -14,9 +22,20 @@ body {
     font-style: normal;
     letter-spacing: 0.03em;
 }
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+}
 /* header */
 .header {
     background-color: var(--nav-bg-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
+   
 }
 .logo {
         color:#000000;
@@ -76,6 +95,11 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    width: 696px;
+    height: 120px;
+    padding-top: 200px;
+    margin-bottom: 30px;
 }
 .order-button {
     color: #ffffff;
@@ -88,6 +112,10 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
+    width: 216px;
+    height: 50px;
+    
 }
 /* Company rules */
 .rules-title {

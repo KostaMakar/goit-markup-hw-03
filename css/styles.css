@@ -81,7 +81,7 @@ body {
 .contacts-tel:focus {
     color: var(--special-text-color);}
 /* service order */
-.section {
+.hero {
     background-color: var(--special-bg-color);
     text-align: center;
 }
@@ -116,9 +116,12 @@ body {
     padding: 10px 32px;
 }
 /* Company rules */
-.rules {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.rules-list {
+    margin-bottom: 94px;
 }
 .rules-title {
     color: var(--primary-text-color);
@@ -135,7 +138,9 @@ body {
     font-size: 14px;
     line-height: 1.7;   
 }
-/* what we are doing */
+.work-list-item {
+    display: inline-block;
+}
 .work-title,
 .team-title {
     font-weight: 700;
@@ -145,32 +150,48 @@ body {
 
     text-align: center;
 
-    
+    margin-bottom: 50px;
 }
 /* Team */
 .team-list-item {
     background-color: #ffffff;
+
+    display: inline-block;
+    width: 270px;
+    height: 368px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team {
     background-color: #F5F4FA;
-    margin: 0%;
 }
 .team-list-title {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
+
+    margin-top: 20px;
 }
 .team-list-text {
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
+
+    margin-top: 10px;
 }
 /* footer */
 .footer {
     background-color: var(--special-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+/* .display {
+display: inline-block;
+} */
 .footer-logo {
     color: #ffffff;
     text-decoration: none;
@@ -179,6 +200,9 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+
+    display: inline-block;
+    margin-bottom: 20px;
 }
 .location {
     color: #FFFFFF;
@@ -188,6 +212,9 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+
+    display: inline-block;
+    margin-bottom: 9px;
 }
 .location:hover,
 .location:focus {
@@ -202,6 +229,11 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+
+    display: inline-block;
+}
+.mail {
+    margin-bottom: 9px;
 }
 .mail:hover,
 .mail:focus {
@@ -223,11 +255,26 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+
+    display: inline-block;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border-color: transparent;
+    padding: 6px 22px;
 }
 .btn:hover,
 .btn:focus {
     color: #FFFFFF;
     background-color: var(--special-text-color);
+}
+.images {
+    margin-top: 56px;
+}
+.images-item {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    width: 370px;
+    height: 404px;
 }
 .images-title {
     color: var(--primary-text-color);
@@ -238,6 +285,8 @@ body {
     line-height: 2;
     
     letter-spacing: 0.06em;
+
+    margin-top: 20px;
 }
 .images-text {
     color: var(--secondary-text-color);
@@ -246,5 +295,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
+
+    margin-top: 4px;
 }
 

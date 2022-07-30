@@ -24,13 +24,12 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 /* header */
 .header {
     background-color: var(--nav-bg-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
+    border: 1px solid #ECECEC;
 }
 .nav,
 .head-nav {
@@ -152,6 +151,10 @@ margin-right: 50px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.rules,
+.main-page {
+    background-color: #F5F5F5;
+}
 .rules-list {
     display: flex;
     margin-bottom: 94px;
@@ -177,8 +180,11 @@ margin-right: 50px;
     font-size: 14px;
     line-height: 1.7;   
 }
-.work-list-item {
-    display: inline-block;
+.work-list {
+    display: flex;   
+}
+.work-list-item:not(:last-child) {
+    margin-right: 30px;
 }
 .work-title,
 .team-title {
@@ -191,14 +197,19 @@ margin-right: 50px;
     text-align: center;
 }
 /* Team */
+.team-list {
+    display: flex;
+}
 .team-list-item {
-    display: inline-block;
+    padding-bottom: 30px;
     width: 270px;
-    height: 368px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
     background-color: #ffffff;
+}
+.team-list-item:not(:last-child) {
+margin-right: 30px;
 }
 .team {
     background-color: #F5F4FA;
@@ -284,8 +295,16 @@ display: inline-block;
 
 /* PORTFOLIO */
 
-.btn-item {
+.btn-list {
     display: flex;
+    justify-content: center;
+}
+.btn-item {
+    text-align: center;
+    align-items: center;
+}
+.btn-item:not(:last-child) {
+    margin-right: 8px;
 }
 .btn {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -310,15 +329,17 @@ display: inline-block;
 .images {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 56px;
+    margin-top: 50px;
 }
 .images-item {
+    /* padding-bottom: 20px; */
     margin-right: 30px;
     margin-bottom: 30px;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
     width: 370px;
+    
     /* height: 404px; */
+
+    background-color: #FFFFFF;
 }
 .images-item:nth-child(3n) {
     margin-right: 0px;
@@ -341,6 +362,7 @@ display: inline-block;
 .images-text {
     padding-left: 24px;
     margin-top: 4px;
+    margin-bottom: 20px;
 
     color: var(--secondary-text-color);
     font-family: 'Roboto';
@@ -349,4 +371,13 @@ display: inline-block;
     font-size: 16px;
     line-height: 1.9;
 }
+.frame {
+    border: 2px solid #eeeeee;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 
